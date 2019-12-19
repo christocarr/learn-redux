@@ -1,19 +1,29 @@
 import React, { Component } from 'react'
 
 class Postform extends Component {
-  state = {
-    title: '',
-    body: ''
+  constructor(props) {
+    super(props)
+    this.state = {
+      title: '',
+      body: ''
+    }
   }
+  
+
+  onChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
+
   render() {
     return (
       <div>
         <h2>Add Post</h2>
         <form>
           <label>Title: </label>
-          <input type="text" name="title" value={this.state.title} />
+          <input type="text" name="title" value={this.state.title} onChange={(e) => this.onChange(e)} />
           <label>Body: </label>
-          <input type="text" name="body" value={this.state.body} />
+          <input type="text" name="body" value={this.state.body} onChange={this.handleBody} />
           <button type="submit">submit</button>
         </form>
       </div>
