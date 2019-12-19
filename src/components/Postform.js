@@ -23,7 +23,7 @@ class Postform extends Component {
           <label>Title: </label>
           <input type="text" name="title" value={this.state.title} onChange={(e) => this.onChange(e)} />
           <label>Body: </label>
-          <input type="text" name="body" value={this.state.body} onChange={this.handleBody} />
+          <input type="text" name="body" value={this.state.body} onChange={(e) => this.onChange(e)} />
           <button type="submit">submit</button>
         </form>
       </div>
