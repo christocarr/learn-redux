@@ -23,7 +23,7 @@ class Posts extends Component {
     )
     return (
       <Fragment>
-        <h1>Posts</h1>
+        <h2>Posts</h2>
         <ul>{postItems}</ul>
       </Fragment>
     )
