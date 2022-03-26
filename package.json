@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "acorn": "^7.4.0",
     "kind-of": "^6.0.3",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.1",
